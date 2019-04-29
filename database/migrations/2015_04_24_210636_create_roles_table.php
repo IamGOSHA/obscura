@@ -22,6 +22,7 @@ class CreateRolesTable extends Migration
         $default = Role::create(['slug'=>'guest','description' => 'Гость',]);
         Role::create(['slug'=>'superuser','description' => 'суперпользователь',]);
         Role::create(['slug'=>'editor','description' => 'редактор',]);
+        Role::create(['slug'=>'translator','description' => 'переводчик',]);
         Role::create(['slug'=>'admin','description' => 'администратор',]);
 
 

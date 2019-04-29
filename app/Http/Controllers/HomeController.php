@@ -23,10 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-    $user = User::where('role_id',4)->get();
-    foreach( $user as $use ){
-       echo $use->roles;
-    }
+    $user = User::where('role_id',1)->get();
+    foreach($user as $userRole)
+        echo $userRole->roles;
+
+
+
 
 
 
